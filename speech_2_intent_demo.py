@@ -11,9 +11,10 @@ audio_buffers = [] #store the audio buffer
 
 #Rhino Speech-to-Intent Engine
 #github: https://github.com/Picovoice/rhino
+#picovoice: https://console.picovoice.ai/
 rhino = pvrhino.create(
-    access_key="42hU5EeyIr72qiaGQ930V12ruOqaZhmPLyh9gDxPIZ0oK39h5czFlw==",
-    context_path="Robot_en_windows_v3_0_0.rhn",
+    access_key="42hU5EeyIr72qiaGQ930V12ruOqaZhmPLyh9gDxPIZ0oK39h5czFlw==", #my key for the picovoice
+    context_path="Robot_en_windows_v3_0_0.rhn", #model to convert speech to intent, **change the path**
     sensitivity = 0.5,
     endpoint_duration_sec = 1)
 
